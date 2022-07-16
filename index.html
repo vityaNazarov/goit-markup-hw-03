@@ -12,24 +12,28 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- header -->
-    <header>
+    <header class="container">
       <!-- логотип -->
 
       <a href="index.html" lang="en" class="logotype"
         >Web<span class="logotype-secondary">Studio</span></a
       >
       <!-- ссылки шапки -->
-      <ul class="list">
+      <ul class="list list-header">
         <li><a href="./index.html" class="link-header active">Студия</a></li>
         <li><a href="./portfolio.html" class="link-header">Портфолио</a></li>
         <li><a href="" class="link-header">Контакты</a></li>
       </ul>
       <!-- контакты шапки -->
-      <ul class="list">
+      <ul class="list header-items">
         <li>
           <a href="mailto:info@devstudio.com" lang="en" class="contacts-header accent"
             >info@devstudio.com</a
@@ -49,70 +53,116 @@
         </h1>
         <button type="button" class="title-button">Заказать услугу</button>
       </section>
-      <section>
-        <h2 hidden>Наши отличия</h2>
-        <ul class="list">
-          <li>
-            <h3 class="differences">Внимание к деталям</h3>
-            <p class="differences-text">
-              Идейные соображения, а также начало повседневной работы по формированию позиции.
-            </p>
-          </li>
-          <li>
-            <h3 class="differences">Пунктуальность</h3>
-            <p class="differences-text">
-              Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
-            </p>
-          </li>
-          <li>
-            <h3 class="differences">Планирование</h3>
-            <p class="differences-text">
-              Равным образом консультация с широким активом в значительной степени обуславливает.
-            </p>
-          </li>
-          <li>
-            <h3 class="differences">Современные технологии</h3>
-            <p class="differences-text">
-              Значимость этих проблем настолько очевидна, что реализация плановых заданий.
-            </p>
-          </li>
-        </ul>
-      </section>
-      <section>
-        <h2 class="team-interests">Чем мы занимаемся</h2>
-        <ul class="list">
-          <li>
-            <img src="./images/img(1).jpg" alt="печатает на клавиатуре" width="370" height="294" />
-          </li>
+      
+        <section class="container differences-padding">
+          
+            <h2 class="visually-hidden">Наши отличия</h2>
+            <div class="differences-item">
+              <ul class="list differences-list">
+                <li class="differences-block">
+                  <h3 class="differences">Внимание к деталям</h3>
+                  <p class="differences-text">
+                    Идейные соображения, а также начало повседневной работы по формированию позиции.
+                  </p>
+                </li>
+                <li class="differences-block">
+                  <h3 class="differences">Пунктуальность</h3>
+                  <p class="differences-text">
+                    Задача организации, в особенности же рамки и место обучения кадров влечет за
+                    собой.
+                  </p>
+                </li>
+                <li class="differences-block">
+                  <h3 class="differences">Планирование</h3>
+                  <p class="differences-text">
+                    Равным образом консультация с широким активом в значительной степени
+                    обуславливает.
+                  </p>
+                </li>
+                <li class="differences-block">
+                  <h3 class="differences">Современные технологии</h3>
+                  <p class="differences-text">
+                    Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          
+        </section>
+        <section class="works">
+          <h2 class="team-interests">Чем мы занимаемся</h2>
+          <ul class="list works-img">
+            <li class="list-items">
+              <img
+                class="work-items"
+                src="./images/img(1).jpg"
+                alt="печатает на клавиатуре"
+                width="370"
+                height="294"
+              />
+            </li>
 
-          <li>
-            <img src="./images/img(2).jpg" alt="телефон и ноутбук" width="370" height="294" />
-          </li>
-          <li>
-            <img src="./images/img(3).jpg" alt="палитра цветов айпад" width="370" height="294" />
-          </li>
-        </ul>
-      </section>
+            <li class="list-items">
+              <img
+                class="work-items"
+                src="./images/img(2).jpg"
+                alt="телефон и ноутбук"
+                width="370"
+                height="294"
+              />
+            </li>
+            <li class="list-items">
+              <img
+                class="work-items"
+                src="./images/img(3).jpg"
+                alt="палитра цветов айпад"
+                width="370"
+                height="294"
+              />
+            </li>
+          </ul>
+        </section>
+      </div>
       <section class="section-team">
-        <h2 class="team-interests">Наша команда</h2>
-        <ul class="list">
+        <h2 class="team-interests our-team">Наша команда</h2>
+
+        <ul class="list team-cards">
           <li class="team-photo">
-            <img src="./images/img(person1)(1).jpg" alt="мужчина" width="270" height="260" />
+            <img
+              class="card-person"
+              src="./images/img(person1)(1).jpg"
+              alt="мужчина"
+              width="270"
+              height="260"
+            />
             <h3 class="team-name">Игорь Демьяненко</h3>
             <p class="team-job" lang="en">Product Designer</p>
           </li>
           <li class="team-photo">
-            <img src="./images/img(person2)(1).jpg" alt="женщина" width="270" height="260" />
+            <img
+              class="card-person"
+              src="./images/img(person2)(1).jpg"
+              alt="женщина"
+              width="270"
+              height="260"
+            />
             <h3 class="team-name">Ольга Репина</h3>
             <p class="team-job" lang="en">Frontend Developer</p>
           </li>
           <li class="team-photo">
-            <img src="./images/img(person3)(1).jpg" alt="мужчина" width="270" height="260" />
+            <img
+              class="card-person"
+              src="./images/img(person3)(1).jpg"
+              alt="мужчина"
+              width="270"
+              height="260"
+            />
             <h3 class="team-name">Николай Тарасов</h3>
             <p class="team-job" lang="en">Marketing</p>
           </li>
           <li class="team-photo">
             <img
+              class="card-person"
               class="team-photo"
               src="./images/img(person4)(1).jpg"
               alt="мужчина"
