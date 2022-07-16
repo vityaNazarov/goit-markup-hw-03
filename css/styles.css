@@ -42,13 +42,11 @@ body {
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
-
   display: flex;
 }
 
-.nav-container {
-  display: inline-block;
-  display: flex;
+.container-works {
+  margin-bottom: 94px;
 }
 
 .logotype {
@@ -59,9 +57,10 @@ body {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   margin-right: 93px;
+  display: block;
 }
 
 .logotype-secondary {
@@ -80,11 +79,6 @@ body {
 
 /* ссылки шапки */
 
-.link-header:hover,
-.link-header:focus {
-  color: var(--text-color-blue);
-}
-
 .link-header {
   color: var(--title-text-color);
   font-weight: 500;
@@ -92,9 +86,16 @@ body {
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-decoration: none;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .link-header.active {
+  color: var(--text-color-blue);
+}
+
+.link-header:hover,
+.link-header:focus {
   color: var(--text-color-blue);
 }
 
@@ -174,7 +175,7 @@ body {
 
 .title-button:hover,
 .title-button:focus {
-  color: var(--title-text-color);
+  background-color: #188ce8;
   cursor: pointer;
 }
 
@@ -183,9 +184,11 @@ body {
 }
 
 .differences-item {
-  width: 1170px;
-  margin: 0 auto;
-  margin-bottom: 94px;
+  min-height: 101px;
+  width: 1200px;
+  margin: 94px auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .differences-block {
@@ -210,7 +213,6 @@ body {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-
   color: var(--primary-text-color);
 }
 
@@ -241,10 +243,6 @@ body {
   margin-bottom: 50px;
 }
 
-.differences-padding {
-  padding: 94px 0;
-}
-
 /* наша команда */
 
 .list.team-cards {
@@ -254,6 +252,11 @@ body {
 
 .team-photo:not(:last-child) {
   margin-right: 30px;
+}
+
+.team-info {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /* .card-person {
@@ -288,8 +291,12 @@ body {
 
 .section-team {
   background-color: var(--button-color);
+}
+
+.section-ourteam {
   text-align: center;
-  padding: 94px 0;
+  width: 1200px;
+  padding: 94px 15px;
   margin: 0 auto;
 }
 
@@ -302,12 +309,14 @@ body {
 }
 
 .team-name {
+  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  margin-bottom: 10px;
 }
 
 .team-job {
@@ -343,6 +352,31 @@ body {
 }
 
 /* footer */
+
+.container-footer {
+  width: 1200px;
+  /* min-height: 254px; */
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.log-footer {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.list-footer li:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.list-footer {
+  padding-bottom: 60px;
+}
 
 .footer {
   background-color: #2f303a;
