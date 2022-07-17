@@ -17,6 +17,10 @@ p {
   margin-bottom: 0;
 }
 
+img {
+  display: block;
+}
+
 ul {
   margin-top: 0;
   margin-bottom: 0;
@@ -43,6 +47,24 @@ body {
   margin-left: auto;
   margin-right: auto;
   display: flex;
+}
+
+.container.img-container {
+  margin-bottom: 94px;
+}
+
+.list.porfolio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.image-porfolio {
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+.header-border {
+  border-bottom: 1px solid #ececec;
 }
 
 .container-works {
@@ -261,6 +283,15 @@ body {
 
 /* кнопки */
 
+.buttons-potfolio {
+  display: flex;
+  min-width: 611px;
+  margin-top: 94px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .nav-button {
   background-color: var(--button-color);
   color: var(--title-text-color);
@@ -271,6 +302,15 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   border: 0;
+  display: block;
+  padding: 0;
+  min-width: 128px;
+  min-height: 38px;
+  padding: 6px 22px;
+}
+
+.buttons-potfolio li:not(:last-child) {
+  margin-right: 8px;
 }
 
 .nav-button:hover {
@@ -327,7 +367,14 @@ body {
 .image {
   box-sizing: border-box;
   background: var(--text-color-button);
+}
+
+.img-info-porfolio {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 24px;
   border: 1px solid #eeeeee;
+  border-top: none;
 }
 
 .image .image-header {
@@ -349,7 +396,6 @@ body {
 
 .container-footer {
   width: 1200px;
-  /* min-height: 254px; */
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
