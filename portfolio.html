@@ -20,51 +20,67 @@
   </head>
   <body>
     <!-- header -->
-    <div class="header-border">
-      <header class="container">
+
+    <header class="header-border">
+      <div class="container container-header">
         <!-- логотип -->
 
         <a href="index.html" lang="en" class="logotype"
           >Web<span class="logotype-secondary">Studio</span></a
         >
+
         <!-- ссылки шапки -->
+
         <ul class="list list-header">
-          <li><a href="./index.html" class="link-header">Студия</a></li>
-          <li><a href="./portfolio.html" class="link-header active">Портфолио</a></li>
-          <li><a href="" class="link-header">Контакты</a></li>
+          <li class="list-pages"><a href="./index.html" class="link-header">Студия</a></li>
+          <li class="list-pages">
+            <a href="./portfolio.html" class="link-header active">Портфолио</a>
+          </li>
+          <li class="list-pages"><a href="" class="link-header">Контакты</a></li>
         </ul>
+
         <!-- контакты шапки -->
+
         <ul class="list header-items">
-          <li>
+          <li class="list-pages">
             <a href="mailto:info@devstudio.com" lang="en" class="contacts-header accent"
               >info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="list-pages">
             <a href="tel:+380961111111" class="contacts-header accent">+38 096 111 11 11</a>
           </li>
         </ul>
-      </header>
-    </div>
+      </div>
+    </header>
+
     <!-- main -->
+
     <main>
-      <section>
+      <section class="section">
         <div class="container">
           <h1 class="visually-hidden">Кнопки фильтр</h1>
 
           <!-- кнопки -->
 
           <ul class="list buttons-potfolio">
-            <li><button type="button" class="nav-button">Все</button></li>
-            <li><button type="button" class="nav-button">Веб-сайты</button></li>
-            <li><button type="button" class="nav-button">Приложения</button></li>
-            <li><button type="button" class="nav-button">Дизайн</button></li>
-            <li><button type="button" class="nav-button">Маркетинг</button></li>
+            <li class="list-nav-buttons"><button type="button" class="nav-button">Все</button></li>
+            <li class="list-nav-buttons">
+              <button type="button" class="nav-button">Веб-сайты</button>
+            </li>
+            <li class="list-nav-buttons">
+              <button type="button" class="nav-button">Приложения</button>
+            </li>
+            <li class="list-nav-buttons">
+              <button type="button" class="nav-button">Дизайн</button>
+            </li>
+            <li class="list-nav-buttons">
+              <button type="button" class="nav-button">Маркетинг</button>
+            </li>
           </ul>
-        </div>
 
-        <!-- картинки -->
-        <div class="container img-container">
+          <!-- картинки -->
+
           <ul class="list porfolio">
             <li class="image image-porfolio">
               <img src="./images/img.jpg" alt="ноутбук" width="370" height="294" />
@@ -139,15 +155,17 @@
         </div>
       </section>
     </main>
+
     <!-- footer -->
+
     <footer class="footer">
-      <div class="container-footer">
+      <div class="container">
         <a href="index.html" lang="en" class="logotype log-footer"
           >Web<span class="logotype-secondary footer">Studio</span></a
         >
         <address class="footer-address">
-          <ul class="list list-footer">
-            <li>
+          <ul class="list">
+            <li class="list-footer-info">
               <a
                 href="https://goo.gl/maps/YywnYqMMY18rzYBH6"
                 target="_blank"
@@ -156,12 +174,12 @@
                 >г. Киев, пр-т Леси Украинки, 26</a
               >
             </li>
-            <li>
+            <li class="list-footer-info">
               <a href="mailto:info@devstudio.com" lang="en" class="contacts-footer accent"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
+            <li class="list-footer-info">
               <a href="tel:+380961111111" class="contacts-footer accent">+38 096 111 11 11</a>
             </li>
           </ul>
